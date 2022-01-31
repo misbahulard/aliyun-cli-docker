@@ -7,4 +7,4 @@ ADD https://github.com/aliyun/aliyun-cli/releases/download/v${ALIYUN_CLI_VERSION
 RUN install_packages curl jq                                             \
     && tar -xvzf /tmp/aliyun-cli-linux-${ALIYUN_CLI_VERSION}-amd64.tgz   \
     && rm /tmp/aliyun-cli-linux-${ALIYUN_CLI_VERSION}-amd64.tgz          \
-    && mv /tmp/aliyun /usr/local/bin/
+    && mv aliyun /usr/local/bin/
